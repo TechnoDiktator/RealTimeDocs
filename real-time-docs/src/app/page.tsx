@@ -1,10 +1,10 @@
-import { Button } from "@/components/ui/button";
-
+import Link from "next/link";
 const Home = () => {
   return (
-    <div  className="flex min-h-screen flex-col items-center justify-center py-2 bg-red-500">
-      <p>This is the home page of the real-time documentation application.</p>
-      <Button variant="secondary">Click Me</Button> 
+    <div  className="flex min-h-screen items-center justify-center">
+      Click <Link href="/documents/123" className="underline">
+      <span className="text-blue-500 underline">&nbsp;here&nbsp;</span>
+      </Link> to go to document id
     </div>
   );
 }

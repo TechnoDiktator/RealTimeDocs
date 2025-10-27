@@ -1,4 +1,4 @@
-
+import { Editor } from "./editor";
 
 //why do we need a promise here?
 // 
@@ -16,8 +16,9 @@ const DocumentIdPage = async ({params}: DocumentIdPageProps) => {
     const documentId = awaitedParams.documentId;
 
     return (
-        <div>
+        <div className="min-h-screen bg-[#FAFBFD]"> 
             Document Id: {documentId}
+            <Editor />
         </div>
     )
 
